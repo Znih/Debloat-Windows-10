@@ -26,14 +26,8 @@ $services = @(
     "XboxGipSvc"                               # Xbox Accessory Management Service | ausklammern wenn der Player bereits deinstalliert wurde
     #"xbgm"                                     # Xbox Game Monitoring | ZUGRIFF VERWEIGERT!!! Dienst löschen!!
     "SEMgrSvc"                                 # Zahlungs- und NFC/SE-Manager
-    #"MessagingService_3cdefe"                  # MessagingService_3cdefe
-    #"UnistoreSvc_3cdefe"                       # Benutzerdatenspeicher _3cdefe
-    #"UserDataSvc_3cdefe"                       # Benutzerdatenzugriff_3cdefe
-    #"CDPUserSvc_3cdefe"                        # Benutzerdienst für die Plattform für verbundene Geräte_3cdefe
     "DiagTrack"                                # Benutzererfahrung und Telemetrie im verbundenen Modus
-    #"UserDataSvc_23721"
-    #"UnistoreSvc_23721"
-	"WpnService"                                # Windows-Pushbenachrichtigungssystemdienst
+    "WpnService"                                # Windows-Pushbenachrichtigungssystemdienst
 	
     
     "WerSvc"
@@ -54,34 +48,34 @@ $services = @(
     "iphlpsvc"                                   # IP-Hilfsdienst
     "WinHttpAutoProxySvc"                        # WinHTTP-Web Proxy Auto-Discovery-Dienst
     "WalletService"                              # Von Clients der Funktion 'Brieftasche' verwendete Hostobjekte
-	#"UsoSvc"                                     # Update Orchestrator Service | wenn Dienst deaktiviert wird, lassen sich in den Einstellungen Update und Sicherheit nicht mehr oeffnen
-	"PhoneSvc"                                   # Verwaltet den Telefoniestatus des Geräts
-	"TapiSrv"                                    # Tel-API-Support (TAPI)
+    #"UsoSvc"                                     # Update Orchestrator Service | wenn Dienst deaktiviert wird, lassen sich in den Einstellungen Update und Sicherheit nicht mehr oeffnen
+    "PhoneSvc"                                   # Verwaltet den Telefoniestatus des Geräts
+    "TapiSrv"                                    # Tel-API-Support (TAPI)
     #"EntAppSvc"                                  # Verwaltungsdienst für Unternehmens-Apps | ZUGRIFF VERWEIGERT!!! Dienst löschen!!
-	"spectrum"                                   # Windows Perception Service (Ermöglicht die räumliche Wahrnehmung, räumliche Eingaben und holografisches Rendering.)
-	"wisvc"                                      # Windows-Insider-Dienst
-	"FrameServer"                                # Windows-Kamera-FrameServer
-	"LicenseManager"                             # Windows-Lizenz-Manager-Dienst
-	"WinRM"                                      # Windows-Remoteverwaltung (WS-Verwaltung)
-	"wcncsvc"                                    # Windows-Sofortverbindung - Konfigurationsregistrierungsstelle | Implementierung des WPS (Wireless Protected Setup)-Protokoll
-	"RetailDemo"                                 # Dienst für Einzelhandelsdemos
-	"SmsRouter"                                  # Microsoft Windows SMS-Routerdienst
-	"PNRPsvc"                                    # Peer Name Resolution-Protokoll
-	"p2psvc"                                     # Peernetzwerk-Gruppenzuordnung
-	"p2pimsvc"                                   # Peernetzwerkidentitäts-Manager
-	"PNRPAutoReg"                                # PNRP-Computernamenveröffentlichungs-Dienst
-	"HvHost"                                     # HV-Hostdienst
-	"vmicvmsession"                              # Hyper-V PowerShell Direct-Dienst
-	"vmickvpexchange"                            # Hyper-V-Datenaustauschdienst
-	"vmictimesync"                               # Hyper-V-Dienst für Zeitsynchronisierung
-	"vmicshutdown"                               # Hyper-V-Dienst zum Herunterfahren des Gasts
-	"vmicguestinterface"                         # Hyper-V-Gastdienstschnittstelle
-	"vmicrdv"                                    # Hyper-V-Remotedesktopvirtualisierungsdienst
-	"vmicheartbeat"                              # Hyper-V-Taktdienst
-	"vmicvss"                                    # Hyper-V-Volumeschattenkopie-Anforderer
-	"AJRouter"                                   # AllJoyn-Routerdienst
-	#"wlidsvc"                                   # Anmelde-Assistent für Microsoft-Konten | gilt auch für UNC Mapping
-	#"embeddedmode"
+    "spectrum"                                   # Windows Perception Service (Ermöglicht die räumliche Wahrnehmung, räumliche Eingaben und holografisches Rendering.)
+    "wisvc"                                      # Windows-Insider-Dienst
+    "FrameServer"                                # Windows-Kamera-FrameServer
+    "LicenseManager"                             # Windows-Lizenz-Manager-Dienst
+    "WinRM"                                      # Windows-Remoteverwaltung (WS-Verwaltung)
+    "wcncsvc"                                    # Windows-Sofortverbindung - Konfigurationsregistrierungsstelle | Implementierung des WPS (Wireless Protected Setup)-Protokoll
+    "RetailDemo"                                 # Dienst für Einzelhandelsdemos
+    "SmsRouter"                                  # Microsoft Windows SMS-Routerdienst
+    "PNRPsvc"                                    # Peer Name Resolution-Protokoll
+    "p2psvc"                                     # Peernetzwerk-Gruppenzuordnung
+    "p2pimsvc"                                   # Peernetzwerkidentitäts-Manager
+    "PNRPAutoReg"                                # PNRP-Computernamenveröffentlichungs-Dienst
+    "HvHost"                                     # HV-Hostdienst
+    "vmicvmsession"                              # Hyper-V PowerShell Direct-Dienst
+    "vmickvpexchange"                            # Hyper-V-Datenaustauschdienst
+    "vmictimesync"                               # Hyper-V-Dienst für Zeitsynchronisierung
+    "vmicshutdown"                               # Hyper-V-Dienst zum Herunterfahren des Gasts
+    "vmicguestinterface"                         # Hyper-V-Gastdienstschnittstelle
+    "vmicrdv"                                    # Hyper-V-Remotedesktopvirtualisierungsdienst
+    "vmicheartbeat"                              # Hyper-V-Taktdienst
+    "vmicvss"                                    # Hyper-V-Volumeschattenkopie-Anforderer
+    "AJRouter"                                   # AllJoyn-Routerdienst
+    #"wlidsvc"                                   # Anmelde-Assistent für Microsoft-Konten | gilt auch für UNC Mapping
+    #"embeddedmode"
     "AppReadiness"
     #"Schedule"
     "DevQueryBroker"
