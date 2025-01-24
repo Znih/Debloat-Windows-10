@@ -1,36 +1,18 @@
-# Debloat Windows 10
+# Windows 10 debloatieren
 
-**Note about Creators Update:** These scripts have *not* been tested with the
-Creators Update. Anything may happen, be prepared. I'll look into relevant
-changes and recent issues when the update is released / pushed on to everyone.
+**Hinweis zum Creators Update:** Diese Skripte wurden **_nicht_** mit dem Creators Update getestet. Es kann alles passieren, seien Sie vorbereitet. Ich werde relevante Änderungen und aktuelle Probleme untersuchen, wenn das Update veröffentlicht/an alle weitergegeben wird.
 
-This project collects Powershell scripts which help to *debloat* Windows 10,
-tweak common settings and install basic software components.
+Dieses Projekt sammelt Powershell-Skripte, die dabei helfen, Windows 10 zu debloatieren, allgemeine Einstellungen zu optimieren und grundlegende Softwarekomponenten zu installieren.
 
-I test these scripts on a Windows 10 Professional 64-Bit (English) virtual
-machine. Please let me know if you encounter any issues. Home Edition and
-different languages are not supported. These scripts are intended for
-tech-savvy administrators, who know what they are doing and just want to
-automate this phase of their setup. If this profile does not fit you, I
-recommend using a different (more interactive) tool -- and there are a lot of
-them out there.
+Ich teste diese Skripte auf einer virtuellen Maschine mit Windows 10 Professional 64-Bit (Englisch). Bitte lassen Sie mich wissen, wenn Sie auf Probleme stoßen. Home Edition und andere Sprachen werden nicht unterstützt. Diese Skripte sind für technisch versierte Administratoren gedacht, die wissen, was sie tun, und nur diese Phase ihrer Einrichtung automatisieren möchten. Wenn dieses Profil nicht zu Ihnen passt, empfehle ich die Verwendung eines anderen (interaktiveren) Tools – und davon gibt es viele.
 
-**There is no undo**, I recommend only using these scripts on a fresh
-installation (including Windows Updates). Test everything after running them
-before doing anything else. Also there is no guarantee that everything will
-work after future updates since I cannot predict what Microsoft will do next.
+**Es gibt keine Möglichkeit zum Rückgängigmachen.** Ich empfehle, diese Skripte nur bei einer Neuinstallation (einschließlich Windows-Updates) zu verwenden. Testen Sie alles, nachdem Sie sie ausgeführt haben, bevor Sie irgendetwas anderes tun. Außerdem gibt es keine Garantie, dass nach zukünftigen Updates alles funktioniert, da ich nicht vorhersagen kann, was Microsoft als Nächstes tun wird.
 
-## Interactivity
+## Interaktivität
+Die Skripte sind so konzipiert, dass sie ohne Benutzerinteraktion ausgeführt werden. Ändern Sie sie vorher. Wenn Sie einen interaktiveren Ansatz wünschen, sehen Sie sich DisableWinTracking von 10se1ucgo an.
 
-The scripts are designed to run without any user-interaction. Modify them
-beforehand. If you want a more interactive approach check out
-[DisableWinTracking](https://github.com/10se1ucgo/DisableWinTracking) from
-[10se1ucgo](https://github.com/10se1ucgo).
-
-## Download Latest Version
-
-Code located in the `master` branch is always considered under development, but
-you'll probably want the most recent version anyway.
+## Neueste Version herunterladen
+Code im Master-Zweig wird immer als in Entwicklung befindlich betrachtet, aber Sie möchten wahrscheinlich trotzdem die neueste Version.
 
 - [Download [zip]](https://github.com/W4RH4WK/Debloat-Windows-10/archive/master.zip)
 
@@ -47,25 +29,21 @@ Unblock PowerShell scripts and modules within this directory:
 
 ## Usage
 
-1. Install all available updates for your system.
-2. Edit the scripts to fit your need.
-3. Run the scripts from a PowerShell with administrator priviledges (Explorer
-   `Files > Open Windows PowerShell > Open Windows PowerShell as
-   administrator`)
-4. `PS > Restart-Computer`
-5. Run `disable-windows-defender.ps1` one more time.
-6. `PS > Restart-Computer`
+1. Installieren Sie alle verfügbaren Updates für Ihr System.
+2. Bearbeiten Sie die Skripte nach Bedarf.
+3. Führen Sie die Skripte von einer PowerShell mit Administratorrechten aus (Explorer
+`Dateien > Windows PowerShell öffnen > Windows PowerShell als
+Administrator öffnen`)
+4. `PS > Computer neu starten`
+5. Führen Sie `disable-windows-defender.ps1` noch einmal aus.
+6. `PS > Computer neu starten`
 
 ## Startmenu
 
-In the past I included small fixes to make the startmenu more usable, like
-removing default tiles, disabling web search and so on. This is no longer the
-case since I am that fed up with it. This fucking menu breaks for apparently
-know reason, is slow, is a pain to configure / script and even shows ads out of
-the box!
+Früher habe ich kleine Korrekturen vorgenommen, um das Startmenü benutzerfreundlicher zu machen, wie z. B. das Entfernen von Standardkacheln, das Deaktivieren der Websuche und so weiter. Dies ist nicht mehr der Fall, da ich es satt habe. Dieses verdammte Menü bricht anscheinend aus unbekanntem Grund zusammen, ist langsam, lässt sich mühsam konfigurieren/skripten und zeigt sogar standardmäßig Werbung an!
 
-Please replace it with something better, either use [Classic Shell] or [Start
-is Back], but stop using that shit.
+Bitte ersetzen Sie es durch etwas Besseres, verwenden Sie entweder [Classic Shell] oder [Start
+ist zurück], aber hören Sie auf, diesen Mist zu verwenden.
 
 [Classic Shell]: <http://www.classicshell.net/>
 [Start is Back]: <http://startisback.com/>
